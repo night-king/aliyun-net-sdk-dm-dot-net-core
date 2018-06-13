@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model SendMailModel
+<div class="jumbotron">
+    <h1>Using Aliyun.DM send a email base on dot net core 2.0</h1>
+    <p style="color:red">注意：请先配置appsettings.json</p>
+    <p>阿里云官方API:<a href="https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.2.4.n0fc7l">https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.2.4.n0fc7l</a></p>
+    <p>
+        <form action="" method="post" class="card">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3" style="text-align:right;padding-top:8px">
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3" style="text-align:right;padding-top:8px">
+                                <label asp-for="Email" class="form-label" style=""></label>
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <input asp-for="Email" class="form-control" type="text" />
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3" style="text-align:right;padding-top:8px">
+                                <label asp-for="FromAlias" class="form-label" style=""></label>
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <input asp-for="FromAlias" class="form-control" type="text" />
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <span asp-validation-for="FromAlias" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3" style="text-align:right;padding-top:8px">
+                                <label asp-for="Subject" class="form-label" style=""></label>
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <input asp-for="Subject" class="form-control" type="text" />
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <span asp-validation-for="Subject" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3" style="text-align:right;padding-top:8px">
+                                <label asp-for="Content" class="form-label" style=""></label>
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <textarea asp-for="Content" class="form-control"></textarea>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <span asp-validation-for="Content" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3" style="text-align:right;padding-top:8px">
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <button type="submit" class="btn btn-primary">Click here to send a test email</button>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form></p>
+</div>
+

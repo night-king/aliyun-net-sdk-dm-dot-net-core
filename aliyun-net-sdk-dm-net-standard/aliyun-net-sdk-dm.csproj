@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Aliyun.Acs.Dm.Transform</AssemblyName>
+    <RootNamespace>Aliyun.Acs.Dm.Transform</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aliyun-net-sdk-core-net-standard\aliyun-net-sdk-core.csproj" />
+  </ItemGroup>
+
+</Project>
